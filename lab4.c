@@ -27,8 +27,6 @@ int eval(int a,int b, char op)
     break;
     case '*': return a*b;
     break;
-    case '^': return pow(a,b);
-    break;
     case '/': if(b==0)
     {
       printf("\n division error");
@@ -38,6 +36,8 @@ int eval(int a,int b, char op)
     {
       return a/b;
     }
+    break;
+    case '^': return pow(a,b);
     break;
   }
 }
@@ -51,7 +51,7 @@ void main()
   printf("\n The input expression is :%s", post);
   while(post[i]!='\0')
   {
-    if(isalnum(post[i]-'0'))
+    if(isalnum(post[i]))
     {
       push(post[i]-'0');
     }
