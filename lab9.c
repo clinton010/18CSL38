@@ -1,5 +1,5 @@
 //  P1
-
+/*
 #include<stdio.h>
 #include<stdlib.h>
 #include<math.h>
@@ -57,7 +57,7 @@ struct node *read_poly(struct node *head)
 	scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		printf("\n Enter the CF,PX,PY,PZ for the term %d",i+1);
+		printf("\n Enter the CF,PX,PY,PZ for the term %d : ",i+1);
 		scanf("%d%d%d%d",&cf,&px,&py,&pz);
 		head=rinsert(head,cf,px,py,pz);
 
@@ -112,11 +112,11 @@ void main()
 	head=eval(head);
 	printf("\n The result is :");
 }
-
+*/
 
 // P2
 
-/*
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<math.h>
@@ -175,7 +175,7 @@ struct node *read_poly(struct node *head)
 	scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		printf("\n Enter the CF,PX,PY,PZ for the term %d",i+1);
+		printf("\n Enter the CF,PX,PY,PZ for the term %d : ",i+1);
 		scanf("%d%d%d%d",&cf,&px,&py,&pz);
 		head=rinsert(head,cf,px,py,pz);
 
@@ -241,7 +241,7 @@ void main()
 
 
 	// read both polynomials 
-	printf("\n 1 st polynomila");
+	printf("\n 1 st polynomial");
 	head1=read_poly(head1);
 
 	printf("\n 2nd Poynomial");
@@ -259,4 +259,3 @@ void main()
 	head2=display(head2);
 
 }
-*/
