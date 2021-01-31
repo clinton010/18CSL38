@@ -3,8 +3,10 @@
 #include<ctype.h>
 #include<math.h>
 
-float s[25];
-int top = -1;
+int top = -1,i;
+float op1, op2, res, s[25];
+char postfix[25], symbol;
+
 float operation(char op, float op1, float op2) {
   switch (op) {
   case '+':
@@ -30,9 +32,6 @@ float pop() {
   return (s[top--]);
 }
 void main() {
-  char postfix[25], symbol;
-  float op1, op2, res;
-  int i;
   printf("Enter the Postfix Expression\n");
   scanf("%s", postfix);
   for (i = 0; postfix[i] != '\0'; i++) {
