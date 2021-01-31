@@ -3,6 +3,9 @@
 #include<string.h>
 #include<conio.h>
 
+int top, j, i;
+char infix[20], postfix[20], s[20], symbol;
+
 int F(char symbol) {
   switch (symbol) {
   case '+':
@@ -42,8 +45,6 @@ int G(char symbol) {
   }
 }
 void infix_postfix(char infix[], char postfix[]) {
-  int top, j, i;
-  char s[30], symbol;
   top = -1;
   s[++top] = '#';
   j = 0;
@@ -65,7 +66,6 @@ void infix_postfix(char infix[], char postfix[]) {
 }
 void main() 
 {
-  char infix[20], postfix[20];
   printf("\nEnter a valid infix expression\n");
   gets(infix);
   infix_postfix(infix, postfix);
