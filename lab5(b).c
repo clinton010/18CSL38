@@ -1,6 +1,5 @@
 // method 1
 #include<stdio.h>
-#include<conio.h>
 #include<math.h>
 
 void tower(int n, int source, int temp, int destination) 
