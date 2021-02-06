@@ -46,7 +46,7 @@ void main() {
     }
   }
   res = pop();
-  printf("Result=%.2f ", res);
+  printf("Result=%.2f \n", res);
 }
 ----------------------------------
 //method 2 
