@@ -174,7 +174,7 @@ void tower(int n,int source,int destination,int aux)
      printf("\n Move disc %d from %c to %c",n,source,destination);
      tower(n-1,aux,destination,source);
 } 
------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
 // method 2
 #include<stdio.h>
 #include<math.h>
